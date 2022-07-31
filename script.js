@@ -1,7 +1,8 @@
 // Write your JavaScript code here!
 
 window.addEventListener("load", function() {
-
+   let form = document.querySelector("form");
+   
    let listedPlanets;
 
    // Set listedPlanetsResponse equal to the value returned by calling myFetch()
@@ -20,7 +21,7 @@ window.addEventListener("load", function() {
        addDestinationInfo(document, pickedPlanetOne.name, pickedPlanetOne.diameter, pickedPlanetOne.star, pickedPlanetOne.distance, pickedPlanetOne.moons, pickedPlanetOne.image);
    })
    
-   let form = document.querySelector("form");
+ 
    form.addEventListener("submit", function(event){
        let pilotName = document.querySelector('input[name="pilotName"]');
        let copilotName = document.querySelector('input[name="copilotName"]');
